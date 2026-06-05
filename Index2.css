@@ -1,0 +1,151 @@
+:root {
+    --main-color:#06c;
+    --bg: #1e1e2e;
+    --c-text: #cdd6f4;
+    --first-bleu: #b4befe;
+    --first-red: #F38BA8;
+    --neon-bleu: #89b4fa;
+    --neon-red: #cba6f7;
+    --purple: #633A73;
+    --foreground: #F6DED7;
+    --background: #221F23;
+    --background-alt: rgba(34,31,35,0.25);
+    --color0: #49454A;
+    --color1: #24152A;
+    --color2: #4F262A;
+    --color3: #563264;
+    --color4: #633A73;
+    --color5: #9B4A74;
+    --color6: #AB7869;
+    --color7: #E9C7BD;
+    --color8: #A38B84;
+    --color9: #301C38;
+    --color10: #693338;
+    --color11: #734386;
+    --color12: #844D99;
+    --color13: #CF639B;
+    --color14: #E4A08C;
+    --color15: #E9C7BD;
+    --text-shadow-neon-bleu-1: rgba(137,180,250,0.7);
+    --text-shadow-neon-bleu-2: rgba(137,180,250,0.3);
+}
+* { 
+    body {
+        color: var(--c-text);
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow: visible;
+        border-radius: 0px;
+        border: none;
+        background-color: var(--color3);
+        
+        * {
+            
+            z-index: 1;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'JetBrainsMono Nerd Font', Arial, Helvetica, sans-serif;
+            color: var(--c-text);
+            background-color: var(--bg);
+            border: 1px solid var(--purple);
+            border-radius: 2vh;
+            box-sizing: border-box;
+        }
+        header {
+            margin-left: 50px;
+            margin-right: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            z-index: 99;
+            top: -1px;
+            padding: 1.5rem 3rem;
+            border-width: 2px;
+            background: var(--bg);
+
+            #logo {
+                font-family: 'Orbitron', monospace;
+                font-size: 1.5rem;
+                font-weight: 900;
+                color: var(--neon-bleu);
+                /*text-shadow: 0 0 12px var(--text-shadow-neon-bleu-1), 0 0 35px var(--text-shadow-neon-bleu-2);*/
+                letter-spacing: 2px;
+            }
+
+            ul {
+                display: flex;
+                gap: 2rem;
+                list-style: none;
+
+                li {
+                    padding: 1rem 0rem;
+                    border: 1px solid var(--neon-bleu);
+
+                    a {
+                        padding: 1rem 1.5rem;
+                        font-size: 1rem;
+                        color: var(--neon-red);
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        position: relative;
+                        
+                    }
+
+                    a:hover {
+                        text-shadow: 0 0 12px rgba(203, 166, 247, 0.8);
+                    }
+
+                    #projet {
+                        background-color: var(--color9);
+                    }
+                }
+            }
+        }
+        main {
+            margin-left: 50px;
+            margin-right: 50px;
+            overflow: hidden;
+
+            section {
+                padding: 4rem 4rem;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border: none;
+                border-top: 1px solid var(--purple);
+                border-bottom: 1px solid var(--purple);
+                border-radius: 0px;
+            }
+
+            #mesprojet {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 100px;
+
+                a {
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    padding: 10px;
+                    background-color: var(--color9);
+                    text-decoration: none;
+
+                    h2 {
+                        padding: 5px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+        footer {
+            margin-left: 50px;
+            margin-right: 50px;
+            border: none;
+        }
+    }
+}
